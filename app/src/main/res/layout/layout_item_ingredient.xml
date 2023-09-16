@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="92dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_vertical"
+    android:id="@+id/itemLayoutIngr">
+
+
+    <!-- Button 1 (Area) -->
+    <TextView
+        android:id="@+id/tvIngr"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tvDescr"
+        android:layout_marginEnd="8dp"/>
+
+    <!-- Button 2 (Category) -->
+    <TextView
+        android:id="@+id/tvDescr"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvIngr"
+        app:layout_constraintEnd_toStartOf="@id/tvType"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"/>
+
+    <!-- Button 3 (Ingredients) -->
+    <TextView
+        android:id="@+id/tvType"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvDescr"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="8dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
